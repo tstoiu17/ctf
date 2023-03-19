@@ -20,19 +20,22 @@ Files:
 
 ## Approach
 
-After some CyberChefing we get the following recipe to get the flag:
+After some CyberChefing we end up with the following recipe that gives outputs
+the flag:
 
-```py
-From_Morse_Code('Space', 'Line feed')
-Substitute('T', '1', false)
-Substitute('F', '0', false)
-From_Binary('Space', 8)
-From_Base64('A-Za-z0-9+/=', true, false)
-Substitute('.', ' ', false)
-From_Charcode('Space', 10)
-From_Base32('A-Z2-7=', false)
-Reverse('Character')
-ROT13_Brute_Force(true, true, false, 100, 0, true, 'vikeCTF')
+```json
+[
+  { "op": "From Morse Code", "args": ["Space", "Line feed"] },
+  { "op": "Substitute", "args": ["T", "1", false] },
+  { "op": "Substitute", "args": ["F", "0", false] },
+  { "op": "From Binary", "args": ["Space", 8] },
+  { "op": "From Base64", "args": ["A-Za-z0-9+/=", true, false] },
+  { "op": "Substitute", "args": [".", " ", false] },
+  { "op": "From Charcode", "args": ["Space", 10] },
+  { "op": "From Base32", "args": ["A-Z2-7=", true] },
+  { "op": "Reverse", "args": ["Character"] },
+  { "op": "ROT13 Brute Force", "args": [true, true, false, 100, 0, false, "vikeCTF"] }
+]
 ```
 
 Flag: 

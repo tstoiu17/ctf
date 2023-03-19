@@ -16,6 +16,6 @@
     - [ ] Gunnar the Gatekeeper
     - [ ] Dig Deep
 - misc
-    - [x] Smoke on the Horizon
+    - [x] [Smoke on the Horizon](./misc/smoke_on_the_horizon/README.md)
 - web
-    - [x] The Vault of Asgaard
+    - [ ] The Vault of Asgaard

@@ -1,6 +1,6 @@
 # vikeCTF{2023}
 
-## Challenges
+## Completed Challenges
 
 - crypto
     - [x] [Cipher Cracking](./crypto/cipher_cracking/README.md)

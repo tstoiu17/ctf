@@ -1,5 +1,10 @@
 # Floating Viking Head
 
+| Difficulty | Points |
+| ---------- | ------ |
+| Easy       | 500    |
+
+
 ## Description
 
 > Greetings, mere mortal! Are you ready to embark on a journey to unveil the

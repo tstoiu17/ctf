@@ -1,5 +1,9 @@
 # Smoke on the Horizon
 
+| Difficulty | Points |
+| ---------- | ------ |
+| Medium     | 500    |
+
 ## Description
 
 > By Odin's beard, we've spotted some smoke signals between the longship and

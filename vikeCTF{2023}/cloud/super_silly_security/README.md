@@ -1,5 +1,10 @@
 # Super Silly Security
 
+| Difficulty | Points |
+| ---------- | ------ |
+| Easy       | 500    |
+
+
 ## Description
 
 > The vikings have founded a new venture, BaaS (Battleaxes-as-a-Service). Their

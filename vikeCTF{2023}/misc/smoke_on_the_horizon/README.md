@@ -38,10 +38,8 @@ Usage: ./decrypt input_file password
 
 This means we needed to run it with 2 arguments: an input file and a password.
 Since `flag.enc` is the only file we had that needs to be decrypted, we tried
-that first.
-
-Another command we tried using to extract information from the pcap file was
-`tcpflow`:
+that first. However, we didn't find a password yet so we tried another command
+to extract information from the pcap file called `tcpflow`:
 
 ```
 tcpflow -r smoke.pcap

@@ -55,21 +55,24 @@ part:
 ![](./functions.png)
 
 Essentially, the string inputted by the user is stored in the variable named
-`input`, it is then encrypted with a call to `encrypt`, and lastly 27 bytes
-from the memory address of the input string and 27 bytes from the address of
-the global variable are compared by `memcmp`. If they are identical, then it
-will print a message of success, otherwise failure. This means that the global
-variable (we renamed to `flag`) points to the flag. We highlight the 27 bytes from
-that address, right click and select `Copy Special...` -> `Python List`.
+`input`, it is then encrypted with a call to `encrypt`, and lastly `0x1b` (or
+in decimal: 27) bytes from the memory address of the input string and 27 bytes
+from the address of the global variable are compared by `memcmp`. If they are
+identical, then it will print a message of success, otherwise failure. This
+means that the global variable (we renamed to `flag`) points to the flag. We
+highlight the 27 bytes from that address, right click and select `Copy
+Special...` -> `Python List`.
 
 The flag is encrypted by the `encrypt` function:
 
 ![](./encrypt.png)
 
 This is simple [XOR-cipher](https://en.wikipedia.org/wiki/XOR_cipher) with a
-key of `0x5d`, and since a XOR-cipher is a symmetric encryption algorithm we
-can decrypt our flag by repeating the encryption process on the encrypted flag,
-with the following Python script:
+key of `0x5d`, and since a XOR-cipher is a [reciprocal
+cipher](https://en.wikipedia.org/wiki/Symmetric-key_algorithm#Reciprocal_cipher)
+we can decrypt our flag (that we copied from `ghidra` as a Python List) by
+repeating the encryption process on the encrypted flag, with the following
+Python script:
 
 ```py
 #!/usr/bin/python3

@@ -20,8 +20,14 @@ Files:
 
 ## Approach
 
-After some CyberChefing we end up with the following recipe that gives outputs
-the flag:
+The given file, `1N73rC3P710N.enc`, contains some dots and dashes which looks
+like morse code. So we copy the file into
+[CyberChef](https://gchq.github.io/CyberChef/) Note that we encountered an
+issue when we initially imported the file into CyberChef with the "Open file as
+input" button, the solution was to copy paste the contents of the file into the
+Input box. After some CyberChefing (spamming the
+[Magic](https://github.com/gchq/CyberChef/wiki/Automatic-detection-of-encoded-data-using-CyberChef-Magic)
+operation) we end up with the following recipe that outputs the flag:
 
 ```json
 [
@@ -43,4 +49,3 @@ Flag:
 ```
 vikeCTF{C0D3_8r34K3r5_637_Cr4CK1N6}
 ```
-
